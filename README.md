@@ -2,6 +2,10 @@
 
 A web-based application that extracts and analyzes text from social media content uploaded as PDF documents or images.
 
+The application combines PDF text extraction, Optical Character Recognition (OCR), and Natural Language Processing (NLP) to provide useful insights from uploaded content.
+
+---
+
 ## Features
 
 - Upload PDF files
@@ -10,7 +14,8 @@ A web-based application that extracts and analyzes text from social media conten
 - Extract text from images using OCR
 - Analyze extracted content using NLP
 - Sentiment analysis
-- Word and sentence count
+- Word count
+- Sentence count
 - Hashtag detection
 - Keyword extraction
 - Call-to-action detection
@@ -18,9 +23,12 @@ A web-based application that extracts and analyzes text from social media conten
 - Engagement score
 - Content improvement suggestions
 
+---
+
 ## Technology Stack
 
 ### Backend
+
 - Python
 - FastAPI
 - PyMuPDF
@@ -29,39 +37,32 @@ A web-based application that extracts and analyzes text from social media conten
 - textstat
 
 ### Frontend
+
 - HTML
 - CSS
 - JavaScript
 
 ### Tools
+
 - Git
 - GitHub
+- Uvicorn
+
+---
 
 ## Architecture
 
-The application follows this flow:
-
-Upload File → Text Extraction → NLP Analysis → Results Dashboard
-
-PDF files are processed using PyMuPDF, while image files are processed using Tesseract OCR. The extracted text is then analyzed using NLP techniques.
-
-## Project Structure
+The application follows this processing flow:
 
 ```text
-social-media-content-analyzer/
-│
-├── backend/
-│   ├── main.py
-│   └── services/
-│       ├── nlp_analyzer.py
-│       ├── ocr.py
-│       └── pdf_extractor.py
-│
-├── frontend/
-│   ├── index.html
-│   ├── script.js
-│   └── style.css
-│
-├── .gitignore
-├── requirements.txt
-└── README.md
+User Upload
+     ↓
+File Type Detection
+     ↓
+Text Extraction
+     ↓
+NLP Analysis
+     ↓
+Content Insights
+     ↓
+Results Dashboard
