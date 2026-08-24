@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Social Media Content Analyzer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Social Media Content Analyzer</h1>
+            <p>
+                Upload your PDF or image and analyze your social media content.
+            </p>
+        </header>
+
+
+        <section class="upload-section">
+
+            <div class="upload-box">
+
+                <h2>Upload Content</h2>
+
+                <p>
+                    Supported formats: PDF, JPG, JPEG, PNG, WEBP
+                </p>
+
+                <input
+                    type="file"
+                    id="fileInput"
+                    accept=".pdf,.jpg,.jpeg,.png,.webp"
+                >
+
+                <button id="analyzeButton">
+                    Analyze Content
+                </button>
+
+                <p id="status"></p>
+
+            </div>
+
+        </section>
+
+
+        <section id="results" class="results hidden">
+
+            <h2>Analysis Results</h2>
+
+
+            <div class="card">
+
+                <h3>Extracted Content</h3>
+
+                <div id="extractedText"></div>
+
+            </div>
+
+
+            <div class="metrics">
+
+                <div class="metric-card">
+                    <h3>Sentiment</h3>
+                    <p id="sentiment">-</p>
+                </div>
+
+                <div class="metric-card">
+                    <h3>Engagement Score</h3>
+                    <p id="engagementScore">-</p>
+                </div>
+
+                <div class="metric-card">
+                    <h3>Word Count</h3>
+                    <p id="wordCount">-</p>
+                </div>
+
+                <div class="metric-card">
+                    <h3>Readability</h3>
+                    <p id="readability">-</p>
+                </div>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Keywords</h3>
+
+                <div id="keywords"></div>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Hashtags</h3>
+
+                <div id="hashtags"></div>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Call-to-Action</h3>
+
+                <p id="cta"></p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Suggestions</h3>
+
+                <ul id="suggestions"></ul>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
