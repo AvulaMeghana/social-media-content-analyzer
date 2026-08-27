@@ -129,6 +129,18 @@ Readability & Engagement Analysis
 Content Improvement Suggestions
 ```
 
+## Screenshots
+
+### Application Interface
+
+![Social Media Content Analyzer - Application Interface](homepage.png)
+
+### Content Analysis Results
+
+![Social Media Content Analyzer - Analysis Results](results1.png)
+
+![Social Media Content Analyzer - Analysis Results](results2.png)
+
 ## Author
 
 Developed as a technical assignment for Unthinkable.
